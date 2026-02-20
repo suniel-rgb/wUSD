@@ -11,7 +11,7 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
                 <Link href="/" class="flex items-center gap-3 group">
-                    <img src="/logos/wusd-logo-transparent.png" alt="wUSD" class="w-10 h-10 object-contain" />
+                    <img src="/logos/wusd-icon-transparent.png" alt="wUSD" class="w-10 h-10 object-contain" />
                     <span class="text-xl font-semibold text-slate-900 tracking-tight">wUSD</span>
                 </Link>
 
@@ -32,7 +32,7 @@
                     <a href="https://app.prex.markets" class="px-4 py-2 text-sm text-slate-600 hover:text-slate-900 transition-colors font-medium">
                         Log In
                     </a>
-                    <a href="https://app.prex.markets" class="px-5 py-2.5 text-sm font-medium text-white bg-prex-600 hover:bg-prex-500 rounded-full transition-all duration-200 shadow-md shadow-prex-600/20">
+                    <a href="https://app.prex.markets" class="px-5 py-2.5 text-sm font-medium text-white rounded-full transition-all duration-200" style="background-color: #2563eb; box-shadow: 0 4px 12px -2px rgba(37, 99, 235, 0.35)">
                         Start Earning
                     </a>
                 </div>
@@ -72,7 +72,7 @@
                         <a href="https://app.prex.markets" class="w-full py-3 text-center text-sm font-medium text-slate-600 border border-slate-200 rounded-full hover:border-slate-300 transition-colors">
                             Log In
                         </a>
-                        <a href="https://app.prex.markets" class="w-full py-3 text-center text-sm font-medium text-white bg-prex-600 hover:bg-prex-500 rounded-full transition-colors">
+                        <a href="https://app.prex.markets" class="w-full py-3 text-center text-sm font-medium text-white rounded-full transition-colors" style="background-color: #2563eb">
                             Start Earning
                         </a>
                     </div>

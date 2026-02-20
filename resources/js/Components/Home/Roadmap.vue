@@ -3,13 +3,13 @@
         <!-- Floating background elements -->
         <div class="absolute inset-0 pointer-events-none">
             <div class="absolute top-20 left-[6%] w-14 h-14 opacity-10 animate-float" style="animation-delay: -1s">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
             <div class="absolute top-40 right-[10%] w-10 h-10 opacity-15 animate-float-slower" style="animation-delay: -3s">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
             <div class="absolute bottom-24 right-[5%] w-16 h-16 opacity-10 animate-bob" style="animation-delay: -2s">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
         </div>
 

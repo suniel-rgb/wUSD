@@ -33,7 +33,10 @@
                         <div :class="['flex flex-col sm:flex-row gap-4 justify-center lg:justify-start transition-all duration-1000 delay-200', mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8']">
                             <a
                                 href="https://app.prex.markets/signup"
-                                class="px-8 py-4 text-base font-medium text-white bg-prex-600 hover:bg-prex-500 rounded-full transition-all duration-200 shadow-lg shadow-prex-600/25 hover:shadow-prex-500/30 hover:scale-105"
+                                class="px-8 py-4 text-base font-medium text-white rounded-full transition-all duration-200 hover:scale-105"
+                                style="background-color: #2563eb; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4)"
+                                @mouseenter="$event.target.style.backgroundColor = '#3b82f6'"
+                                @mouseleave="$event.target.style.backgroundColor = '#2563eb'"
                             >
                                 Create Account
                             </a>
@@ -105,7 +108,7 @@
                             <div class="flex flex-col items-center group">
                                 <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
                                     <img
-                                        src="/logos/wusd-logo-transparent.png"
+                                        src="/logos/wusd-icon-transparent.png"
                                         alt="wUSD"
                                         class="w-full h-full object-contain"
                                         style="filter: drop-shadow(0 4px 8px rgba(59, 130, 246, 0.3))"

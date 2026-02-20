@@ -229,10 +229,12 @@ body {
     @apply inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none;
 }
 .btn-primary {
-    @apply inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none px-6 py-3 text-white bg-prex-600 hover:bg-prex-500 rounded-full;
+    @apply inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none px-6 py-3 text-white rounded-full;
+    background-color: #2563eb;
     box-shadow: 0 4px 14px -3px rgba(37, 99, 235, 0.4);
 }
 .btn-primary:hover {
+    background-color: #3b82f6;
     box-shadow: 0 6px 20px -3px rgba(37, 99, 235, 0.5);
 }
 .btn-secondary {
@@ -321,6 +323,31 @@ body {
     background-size: 200% 200%;
     animation: shimmerText 4s ease-in-out infinite;
 }
+
+/* Explicit animation utility classes (Tailwind v4 @theme may not auto-generate these) */
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-float-slow { animation: float 8s ease-in-out infinite; }
+.animate-float-slower { animation: float 10s ease-in-out infinite; }
+.animate-float-page { animation: floatPage 8s ease-in-out infinite; }
+.animate-bob { animation: bob 4s ease-in-out infinite; }
+.animate-rotate-slow { animation: rotateSlow 30s linear infinite; }
+.animate-rotate-slower { animation: rotateSlow 45s linear infinite; }
+.animate-orbit { animation: orbit 20s linear infinite; }
+.animate-orbit-reverse { animation: orbitReverse 25s linear infinite; }
+.animate-pulse-glow { animation: pulseGlow 3s ease-in-out infinite; }
+.animate-pulse-slow { animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.animate-glow { animation: glow 3s ease-in-out infinite; }
+.animate-shimmer { animation: shimmer 3s ease-in-out infinite; }
+.animate-particle { animation: particle 8s ease-in-out infinite; }
+.animate-drift { animation: drift 20s linear infinite; }
+.animate-drift-slow { animation: drift 40s linear infinite; }
+.animate-scroll-indicator { animation: scrollIndicator 2s ease-in-out infinite; }
+.animate-btn-shine { animation: btnShine 3s ease-in-out infinite; }
+.animate-ping-slow { animation: pingSlow 3s cubic-bezier(0, 0, 0.2, 1) infinite; }
+.animate-flow-right { animation: flowRight 2s ease-in-out infinite; }
+.animate-mesh-shift { animation: meshShift 20s ease-in-out infinite; }
+.animate-shimmer-bar { animation: shimmerBar 2s ease-in-out infinite; }
+.animate-sparkle { animation: sparkle 3s ease-in-out infinite; }
 
 /* SVG line draw animation */
 .animate-draw-line {

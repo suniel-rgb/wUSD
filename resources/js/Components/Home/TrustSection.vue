@@ -17,7 +17,7 @@
                 <h2 class="heading-lg mb-6">
                     Built for <span class="text-gradient">Accountability</span>
                 </h2>
-                <p class="text-body-lg">
+                <p class="text-lg text-slate-600">
                     wUSD is backed by verifiable revenue, not promises. Transparent treasury,
                     public wallets, honest risk disclosure.
                 </p>
@@ -30,7 +30,7 @@
                     :key="index"
                     class="card-hover flex gap-5 group"
                 >
-                    <div class="feature-icon-prex flex-shrink-0 group-hover:border-prex-300 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-prex-50 border border-prex-200 flex items-center justify-center flex-shrink-0 group-hover:border-prex-300 transition-colors">
                         <svg class="w-5 h-5 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="feature.iconPath" />
                         </svg>

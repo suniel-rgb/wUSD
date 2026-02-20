@@ -60,7 +60,7 @@
             ]"
         >
             <img
-                src="/logos/wusd-logo-transparent.png"
+                src="/logos/wusd-icon-transparent.png"
                 alt="wUSD"
                 class="w-full h-full object-contain"
                 style="filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.25))"

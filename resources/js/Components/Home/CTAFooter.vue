@@ -5,16 +5,16 @@
         <!-- Floating logos in background -->
         <div class="absolute inset-0 pointer-events-none">
             <div class="absolute top-16 left-[5%] w-20 h-20 opacity-10 animate-float-slow">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
             <div class="absolute top-32 right-[8%] w-16 h-16 opacity-15 animate-bob" style="animation-delay: -2s">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
             <div class="absolute bottom-24 left-[12%] w-12 h-12 opacity-10 animate-float" style="animation-delay: -1s">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
             <div class="absolute bottom-16 right-[15%] w-14 h-14 opacity-15 animate-float-slower" style="animation-delay: -3s">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
         </div>
 
@@ -24,7 +24,7 @@
                 <div class="relative">
                     <div class="w-32 h-32 animate-float-slow">
                         <img
-                            src="/logos/wusd-logo-transparent.png"
+                            src="/logos/wusd-icon-transparent.png"
                             alt="wUSD"
                             class="w-full h-full object-contain"
                             style="filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.3))"
@@ -51,7 +51,8 @@
 
             <a
                 href="https://app.prex.markets"
-                class="inline-flex items-center gap-2 px-8 py-4 text-base font-medium text-white bg-prex-600 hover:bg-prex-500 rounded-full transition-all duration-200 shadow-lg shadow-prex-600/25 hover:scale-105"
+                class="inline-flex items-center gap-2 px-8 py-4 text-base font-medium text-white rounded-full transition-all duration-200 hover:scale-105"
+                style="background-color: #2563eb; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4)"
             >
                 Start Earning wUSD
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

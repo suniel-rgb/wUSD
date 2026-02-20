@@ -54,7 +54,7 @@
             :style="{ width: config.center + 'px', height: config.center + 'px' }"
         >
             <img
-                src="/logos/wusd-logo-transparent.png"
+                src="/logos/wusd-icon-transparent.png"
                 alt="wUSD"
                 class="w-full h-full object-contain"
                 style="filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1))"

@@ -5,16 +5,16 @@
         <!-- Floating animated logos in background -->
         <div class="absolute inset-0 pointer-events-none">
             <div class="absolute top-20 left-[10%] w-16 h-16 opacity-20 animate-float-slow">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
             <div class="absolute top-40 right-[15%] w-12 h-12 opacity-15 animate-float-slower" style="animation-delay: -2s">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
             <div class="absolute bottom-32 left-[20%] w-10 h-10 opacity-10 animate-bob" style="animation-delay: -3s">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
             <div class="absolute bottom-20 right-[10%] w-14 h-14 opacity-15 animate-float" style="animation-delay: -1s">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
         </div>
 
@@ -24,7 +24,7 @@
                 <div class="relative">
                     <div class="w-24 h-24 animate-float-slow">
                         <img
-                            src="/logos/wusd-logo-transparent.png"
+                            src="/logos/wusd-icon-transparent.png"
                             alt="wUSD"
                             class="w-full h-full object-contain drop-shadow-lg"
                         />

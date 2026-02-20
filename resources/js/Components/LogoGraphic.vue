@@ -26,7 +26,7 @@
         <div :class="[config.container, 'relative flex items-center justify-center', animated && 'animate-float-slow']">
             <!-- Logo with transparent background -->
             <img
-                src="/logos/wusd-logo-transparent.png"
+                src="/logos/wusd-icon-transparent.png"
                 alt="wUSD Logo"
                 :class="['relative z-10 object-contain', animated && 'hover:scale-105 transition-transform duration-300']"
                 :style="{

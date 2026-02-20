@@ -8,7 +8,7 @@
                 <!-- Brand Column -->
                 <div class="col-span-2">
                     <Link href="/" class="flex items-center gap-2.5 mb-5 group">
-                        <img src="/logos/wusd-logo-transparent.png" alt="wUSD" class="w-9 h-9 object-contain" />
+                        <img src="/logos/wusd-icon-transparent.png" alt="wUSD" class="w-9 h-9 object-contain" />
                         <span class="text-xl font-semibold text-slate-900 tracking-tight">wUSD</span>
                     </Link>
                     <p class="text-slate-700 font-medium text-sm mb-2">The User-First Algorithmic Token</p>

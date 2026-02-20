@@ -3,10 +3,10 @@
         <!-- Floating background elements -->
         <div class="absolute inset-0 pointer-events-none">
             <div class="absolute top-24 right-[5%] w-16 h-16 opacity-10 animate-float-slow">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
             <div class="absolute bottom-32 left-[8%] w-12 h-12 opacity-15 animate-bob" style="animation-delay: -2s">
-                <img src="/logos/wusd-logo-transparent.png" alt="" class="w-full h-full object-contain" />
+                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
             </div>
         </div>
 
@@ -58,7 +58,7 @@
                             facilitated by real user activity.
                         </p>
                     </div>
-                    <Link href="/how-it-works" class="btn-pusd whitespace-nowrap inline-flex items-center">
+                    <Link href="/how-it-works" class="whitespace-nowrap inline-flex items-center px-6 py-3 text-sm font-medium text-white rounded-full transition-all duration-200" style="background-color: #2563eb">
                         Learn More
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
