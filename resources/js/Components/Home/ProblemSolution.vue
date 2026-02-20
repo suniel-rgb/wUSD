@@ -1,20 +1,22 @@
 <template>
-    <section class="section bg-white">
-        <div class="container-wide">
+    <section class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <Badge variant="prex" class="mb-4">Why wUSD Exists</Badge>
-                <h2 class="heading-lg text-slate-900 mb-4">
-                    The problem with today's <span class="text-gradient-pusd">reward tokens</span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-50 text-blue-600 mb-4">
+                    Why wUSD Exists
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
+                    The problem with today's <span class="text-blue-600">reward tokens</span>
                 </h2>
-                <p class="text-lg text-slate-600">
+                <p class="text-lg text-slate-500">
                     Most DeFi platforms rely on inflationary reward tokens that:
                 </p>
             </div>
 
             <!-- Problem vs Solution Grid -->
-            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
-                <!-- Problems -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Problems (Left Column) -->
                 <div>
                     <div class="flex items-center gap-2 mb-6">
                         <div class="w-8 h-8 rounded-lg bg-red-50 border border-red-200 flex items-center justify-center">
@@ -24,62 +26,58 @@
                         </div>
                         <h3 class="text-lg font-semibold text-slate-600">Traditional Rewards</h3>
                     </div>
-                    <div class="space-y-4">
-                        <Card
+                    <div class="space-y-3">
+                        <div
                             v-for="(problem, index) in problems"
                             :key="index"
-                            class="border-red-100 bg-red-50/50"
+                            class="rounded-2xl border border-slate-200 bg-white shadow-sm p-4"
                         >
-                            <div class="flex gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-red-50 text-red-500 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="problem.iconPath" />
                                     </svg>
                                 </div>
-                                <div>
-                                    <p class="text-slate-700">{{ problem.description }}</p>
-                                </div>
+                                <p class="text-slate-700">{{ problem.description }}</p>
                             </div>
-                        </Card>
+                        </div>
                     </div>
                     <p class="text-slate-600 mt-6 text-center lg:text-left italic">
                         This creates extractive ecosystems where platforms win, and users churn.
                     </p>
                 </div>
 
-                <!-- Solutions -->
+                <!-- Solutions (Right Column) -->
                 <div>
                     <div class="flex items-center gap-2 mb-6">
-                        <div class="w-8 h-8 rounded-lg bg-pusd-50 border border-pusd-200 flex items-center justify-center">
-                            <svg class="w-4 h-4 text-pusd-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-pusd-600">wUSD flips the model</h3>
+                        <h3 class="text-lg font-semibold text-blue-600">wUSD flips the model</h3>
                     </div>
                     <p class="text-slate-600 mb-4">With wUSD:</p>
-                    <div class="space-y-4">
-                        <Card
+                    <div class="space-y-3">
+                        <div
                             v-for="(solution, index) in solutions"
                             :key="index"
-                            variant="pusd"
+                            class="rounded-2xl border border-blue-100 bg-blue-50/50 shadow-sm p-4"
                         >
-                            <div class="flex gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-pusd-100 flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-pusd-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="solution.iconPath" />
                                     </svg>
                                 </div>
-                                <div>
-                                    <p class="text-slate-700">{{ solution.description }}</p>
-                                </div>
+                                <p class="text-slate-700">{{ solution.description }}</p>
                             </div>
-                        </Card>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Key Difference Callout -->
+            <!-- Key Difference Callout (Amber Warning Banner) -->
             <div class="mt-12 p-6 rounded-2xl bg-amber-50 border border-amber-200">
                 <div class="flex flex-col md:flex-row items-start gap-4">
                     <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
@@ -102,9 +100,6 @@
 </template>
 
 <script setup>
-import Badge from '@/Components/Badge.vue';
-import Card from '@/Components/Card.vue';
-
 const problems = [
     {
         iconPath: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z',

@@ -1,21 +1,21 @@
 <template>
-    <section class="py-24 md:py-32 bg-white relative">
-        <div class="max-w-6xl mx-auto px-6">
+    <section class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
                     The reward token disrupting DeFi incentives
                 </h2>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div
                     v-for="useCase in useCases"
                     :key="useCase.title"
-                    class="group bg-white border border-slate-200 rounded-2xl p-8 hover:border-slate-300 hover:shadow-lg transition-all duration-300"
+                    class="group rounded-2xl border border-slate-200 bg-white shadow-sm p-6 h-full hover:shadow-md hover:border-slate-300 transition-all duration-300"
                 >
                     <!-- Icon -->
-                    <div class="w-14 h-14 rounded-xl bg-prex-50 border border-prex-200 flex items-center justify-center mb-6 text-prex-600 group-hover:border-prex-300 transition-colors">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" :d="useCase.iconPath" />
                         </svg>
                     </div>
@@ -32,7 +32,7 @@
                     <!-- Link -->
                     <Link
                         :href="useCase.href"
-                        class="inline-flex items-center gap-2 text-prex-600 hover:text-prex-500 text-sm font-medium transition-colors group/link"
+                        class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors group/link"
                     >
                         Learn more
                         <svg

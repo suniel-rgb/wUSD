@@ -3,8 +3,8 @@
         <!-- Hero Section -->
         <section class="section-sm bg-white relative overflow-hidden">
             <div class="absolute inset-0 bg-grid opacity-40" />
-            <div class="absolute inset-0 bg-gradient-to-b from-prex-50/30 to-transparent" />
-            <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-prex-100/50 rounded-full blur-3xl" />
+            <div class="absolute inset-0 bg-gradient-to-b from-blue-50/30 to-transparent" />
+            <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl" />
 
             <div class="container-wide relative z-10">
                 <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
@@ -52,7 +52,7 @@
                 <div class="max-w-5xl mx-auto mb-12">
                     <Card class="p-6">
                         <h3 class="text-lg font-semibold text-slate-900 mb-6 flex items-center gap-2">
-                            <svg class="w-5 h-5 text-pusd-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                             Reward Flow: Trade → Calculate → Credit → Use
                         </h3>
                         <div class="grid md:grid-cols-4 gap-4">
@@ -128,7 +128,7 @@
                             <div v-for="(endpoint, index) in apiEndpoints" :key="index" class="p-4 hover:bg-slate-50 transition-colors">
                                 <div class="flex items-start justify-between gap-4">
                                     <div class="flex items-center gap-3">
-                                        <span :class="['px-2 py-1 rounded text-xs font-mono font-bold', endpoint.method === 'GET' ? 'bg-emerald-100 text-emerald-700' : 'bg-prex-100 text-prex-700']">
+                                        <span :class="['px-2 py-1 rounded text-xs font-mono font-bold', endpoint.method === 'GET' ? 'bg-emerald-100 text-emerald-700' : 'bg-blue-100 text-blue-700']">
                                             {{ endpoint.method }}
                                         </span>
                                         <code class="text-slate-700 font-mono text-sm">{{ endpoint.path }}</code>
@@ -167,8 +167,8 @@
                             </p>
                             <div class="space-y-4">
                                 <div v-for="(item, index) in authFeatures" :key="index" class="flex items-start gap-3">
-                                    <div class="w-8 h-8 rounded-lg bg-pusd-50 border border-pusd-200 flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-4 h-4 text-pusd-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="item.iconPath" /></svg>
+                                    <div class="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="item.iconPath" /></svg>
                                     </div>
                                     <div>
                                         <h4 class="text-slate-900 font-medium">{{ item.title }}</h4>
@@ -205,7 +205,7 @@
                     <div class="grid md:grid-cols-2 gap-6 mb-8">
                         <Card v-for="(webhook, index) in webhooks" :key="index" class="p-4">
                             <div class="flex items-center justify-between mb-2">
-                                <code class="text-prex-600 font-mono text-sm">{{ webhook.event }}</code>
+                                <code class="text-blue-600 font-mono text-sm">{{ webhook.event }}</code>
                                 <Badge v-if="webhook.status === 'available'" variant="success">
                                     <svg class="w-3 h-3 mr-1 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                                     Available
@@ -245,7 +245,7 @@
                             <Badge v-else variant="default">Coming Soon</Badge>
                         </div>
                         <code class="text-slate-600 font-mono text-sm block mb-4">{{ sdk.package }}</code>
-                        <a v-if="sdk.link" :href="sdk.link" target="_blank" rel="noopener noreferrer" class="text-prex-600 text-sm flex items-center gap-1 hover:underline">
+                        <a v-if="sdk.link" :href="sdk.link" target="_blank" rel="noopener noreferrer" class="text-blue-600 text-sm flex items-center gap-1 hover:underline">
                             View package <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                         </a>
                         <span v-else class="text-slate-400 text-sm">Coming Q2 2026</span>
@@ -264,10 +264,10 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
                     <a v-for="(resource, index) in resources" :key="index" :href="resource.link" target="_blank" rel="noopener noreferrer" class="group">
                         <Card variant="hover" class="p-6 h-full">
-                            <div class="w-10 h-10 rounded-lg bg-prex-50 border border-prex-200 flex items-center justify-center mb-4 group-hover:bg-prex-100 transition-colors">
-                                <svg class="w-5 h-5 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="resource.iconPath" /></svg>
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center mb-4 group-hover:bg-blue-100 transition-colors">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="resource.iconPath" /></svg>
                             </div>
-                            <h3 class="text-slate-900 font-semibold mb-1 group-hover:text-prex-600 transition-colors">{{ resource.title }}</h3>
+                            <h3 class="text-slate-900 font-semibold mb-1 group-hover:text-blue-600 transition-colors">{{ resource.title }}</h3>
                             <p class="text-slate-600 text-sm">{{ resource.description }}</p>
                         </Card>
                     </a>
@@ -301,9 +301,9 @@ import CodeBlock from '@/Components/CodeBlock.vue';
 import Tabs from '@/Components/Tabs.vue';
 
 const flowSteps = [
-    { title: 'Trade Event', description: 'User executes a trade on Prex Markets', bgColor: 'bg-prex-50', borderColor: 'border-prex-200', numBg: 'bg-prex-100', numBorder: 'border-prex-200', numText: 'text-prex-600' },
-    { title: 'Reward Calc', description: 'System calculates wUSD based on volume + LossLess™', bgColor: 'bg-pusd-50', borderColor: 'border-pusd-200', numBg: 'bg-pusd-100', numBorder: 'border-pusd-200', numText: 'text-pusd-600' },
-    { title: 'wUSD Credit', description: 'wUSD credited to user account (subject to unlock)', bgColor: 'bg-prex-50', borderColor: 'border-prex-200', numBg: 'bg-prex-100', numBorder: 'border-prex-200', numText: 'text-prex-600' },
+    { title: 'Trade Event', description: 'User executes a trade on Prex Markets', bgColor: 'bg-blue-50', borderColor: 'border-blue-200', numBg: 'bg-blue-100', numBorder: 'border-blue-200', numText: 'text-blue-600' },
+    { title: 'Reward Calc', description: 'System calculates wUSD based on volume + LossLess™', bgColor: 'bg-blue-50', borderColor: 'border-blue-200', numBg: 'bg-blue-100', numBorder: 'border-blue-200', numText: 'text-blue-600' },
+    { title: 'wUSD Credit', description: 'wUSD credited to user account (subject to unlock)', bgColor: 'bg-blue-50', borderColor: 'border-blue-200', numBg: 'bg-blue-100', numBorder: 'border-blue-200', numText: 'text-blue-600' },
     { title: 'On-Platform Use', description: 'User can utilize, stake, or redeem wUSD', bgColor: 'bg-emerald-50', borderColor: 'border-emerald-200', numBg: 'bg-emerald-100', numBorder: 'border-emerald-200', numText: 'text-emerald-600' },
 ];
 

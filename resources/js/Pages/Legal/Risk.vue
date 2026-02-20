@@ -112,9 +112,9 @@
                             <li>Third-party wallet or service failures could impact your holdings</li>
                         </ul>
 
-                        <div class="p-6 bg-prex-50 border border-prex-200 rounded-xl mt-8">
+                        <div class="p-6 bg-blue-50 border border-blue-200 rounded-xl mt-8">
                             <div class="flex items-start gap-4">
-                                <svg class="w-6 h-6 text-prex-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+                                <svg class="w-6 h-6 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
                                 <div>
                                     <h3 class="text-slate-900 font-semibold mb-2">Your Responsibility</h3>
                                     <p class="text-slate-600 text-sm">

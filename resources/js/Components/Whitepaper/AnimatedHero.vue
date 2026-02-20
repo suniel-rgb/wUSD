@@ -2,7 +2,7 @@
     <section class="relative overflow-hidden min-h-[90vh] flex items-center">
         <!-- Animated gradient mesh background -->
         <div class="absolute inset-0">
-            <div class="absolute inset-0 bg-gradient-to-b from-prex-50/50 via-white to-slate-50" />
+            <div class="absolute inset-0 bg-gradient-to-b from-blue-50/50 via-white to-slate-50" />
             <div class="absolute inset-0 opacity-40" :style="{ background: `radial-gradient(ellipse 600px 400px at 20% 30%, rgba(59, 130, 246, 0.12), transparent), radial-gradient(ellipse 500px 500px at 80% 60%, rgba(250, 204, 21, 0.08), transparent), radial-gradient(ellipse 800px 300px at 50% 10%, rgba(96, 165, 250, 0.1), transparent)` }" />
         </div>
 
@@ -11,7 +11,7 @@
 
         <!-- Floating particles -->
         <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-            <div v-for="(p, i) in particles" :key="i" class="absolute rounded-full bg-prex-400/20 animate-particle" :style="{ left: p.left, top: p.top, width: p.size + 'px', height: p.size + 'px', animationDelay: p.delay, animationDuration: p.duration }" />
+            <div v-for="(p, i) in particles" :key="i" class="absolute rounded-full bg-blue-400/20 animate-particle" :style="{ left: p.left, top: p.top, width: p.size + 'px', height: p.size + 'px', animationDelay: p.delay, animationDuration: p.duration }" />
         </div>
 
         <!-- Floating document pages -->
@@ -21,7 +21,7 @@
                     <div class="w-3/4 h-1 bg-slate-200/60 rounded-full" />
                     <div class="w-full h-1 bg-slate-200/40 rounded-full" />
                     <div class="w-5/6 h-1 bg-slate-200/40 rounded-full" />
-                    <div class="w-2/3 h-1 bg-prex-200/50 rounded-full mt-1" />
+                    <div class="w-2/3 h-1 bg-blue-200/50 rounded-full mt-1" />
                     <div class="w-full h-1 bg-slate-200/40 rounded-full" />
                     <div class="w-4/5 h-1 bg-slate-200/40 rounded-full" />
                 </div>

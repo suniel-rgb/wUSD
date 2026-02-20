@@ -1,32 +1,18 @@
 <template>
-    <section id="roadmap" class="section bg-white relative overflow-hidden">
-        <!-- Floating background elements -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-20 left-[6%] w-14 h-14 opacity-10 animate-float" style="animation-delay: -1s">
-                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
-            </div>
-            <div class="absolute top-40 right-[10%] w-10 h-10 opacity-15 animate-float-slower" style="animation-delay: -3s">
-                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
-            </div>
-            <div class="absolute bottom-24 right-[5%] w-16 h-16 opacity-10 animate-bob" style="animation-delay: -2s">
-                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
-            </div>
-        </div>
-
-        <div class="container-wide relative z-10">
+    <section id="roadmap" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <Badge variant="prex" class="mb-4">Roadmap</Badge>
-                <h2 class="heading-lg text-slate-900 mb-4">
-                    Roadmap to <span class="text-gradient">Full Maturity</span>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
+                    Roadmap to Full Maturity
                 </h2>
-                <p class="text-lg text-slate-600">
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">
                     Each phase strengthens backing before expanding utility.
                 </p>
             </div>
 
             <!-- Timeline -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div
                     v-for="(phase, index) in phases"
                     :key="index"
@@ -37,7 +23,14 @@
                     ]"
                 >
                     <div class="flex items-center justify-between mb-4">
-                        <Badge :variant="getStyles(phase.status).badge">{{ phase.phase }}</Badge>
+                        <span
+                            :class="[
+                                'inline-flex items-center px-3 py-1 rounded-full text-xs font-medium',
+                                getStyles(phase.status).badgeClasses,
+                            ]"
+                        >
+                            {{ phase.phase }}
+                        </span>
                         <!-- CheckCircle for completed -->
                         <svg
                             v-if="phase.status === 'completed'"
@@ -51,7 +44,7 @@
                         <!-- Pulsing circle for current -->
                         <svg
                             v-else-if="phase.status === 'current'"
-                            class="w-5 h-5 text-prex-600 animate-pulse"
+                            class="w-5 h-5 text-blue-600 animate-pulse"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -80,7 +73,7 @@
                                 :class="[
                                     'w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0',
                                     phase.status === 'completed' ? 'bg-emerald-500' :
-                                    phase.status === 'current' ? 'bg-prex-600' : 'bg-slate-400',
+                                    phase.status === 'current' ? 'bg-blue-600' : 'bg-slate-400',
                                 ]"
                             />
                             <span class="text-slate-600">{{ item }}</span>
@@ -148,9 +141,9 @@ const phases = [
 
 const getStyles = (status) => {
     const map = {
-        completed: { border: 'border-emerald-200', bg: 'bg-emerald-50', badge: 'success' },
-        current: { border: 'border-prex-200', bg: 'bg-prex-50', badge: 'prex' },
-        upcoming: { border: 'border-slate-200', bg: 'bg-slate-50', badge: 'default' },
+        completed: { border: 'border-emerald-200', bg: 'bg-emerald-50', badgeClasses: 'bg-emerald-100 text-emerald-700' },
+        current: { border: 'border-blue-200', bg: 'bg-blue-50', badgeClasses: 'bg-blue-100 text-blue-700' },
+        upcoming: { border: 'border-slate-200', bg: 'bg-slate-50', badgeClasses: 'bg-slate-100 text-slate-600' },
     };
     return map[status];
 };

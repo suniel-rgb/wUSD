@@ -1,11 +1,11 @@
 <template>
     <section class="py-20 md:py-28 bg-white relative overflow-hidden">
-        <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-14">
-                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
                     Built on trusted infrastructure
                 </h3>
-                <p class="text-slate-600 max-w-2xl mx-auto">
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">
                     wUSD is powered by industry-leading partners and integrated across the Solana ecosystem.
                 </p>
             </div>

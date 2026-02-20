@@ -2,10 +2,10 @@
     <section class="section bg-white relative overflow-hidden">
         <!-- Animated background decoration -->
         <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-            <div class="absolute left-[10%] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-prex-200/40 to-transparent" />
-            <div class="absolute right-[10%] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-pusd-200/30 to-transparent" />
-            <div class="absolute top-20 right-[15%] w-32 h-32 rounded-full bg-prex-100/30 animate-float-slow blur-2xl" />
-            <div class="absolute bottom-20 left-[12%] w-24 h-24 rounded-full bg-pusd-100/30 animate-float blur-2xl" />
+            <div class="absolute left-[10%] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-blue-200/40 to-transparent" />
+            <div class="absolute right-[10%] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-blue-200/30 to-transparent" />
+            <div class="absolute top-20 right-[15%] w-32 h-32 rounded-full bg-blue-100/30 animate-float-slow blur-2xl" />
+            <div class="absolute bottom-20 left-[12%] w-24 h-24 rounded-full bg-blue-100/30 animate-float blur-2xl" />
         </div>
 
         <div class="container-wide relative z-10">
@@ -24,20 +24,20 @@
                 <div ref="listRef" class="relative">
                     <!-- Vertical timeline line -->
                     <div class="absolute left-[23px] top-6 bottom-6 w-[2px] bg-slate-100 overflow-hidden rounded-full">
-                        <div :class="['w-full bg-gradient-to-b from-prex-400 via-pusd-400 to-emerald-400 rounded-full transition-all duration-[2000ms] ease-out', listVisible ? 'h-full' : 'h-0']" />
+                        <div :class="['w-full bg-gradient-to-b from-blue-400 via-blue-400 to-emerald-400 rounded-full transition-all duration-[2000ms] ease-out', listVisible ? 'h-full' : 'h-0']" />
                     </div>
 
                     <div class="space-y-3">
-                        <div v-for="(section, index) in tableOfContents" :key="section.number" :class="['flex items-start gap-5 p-5 bg-white border border-slate-200 rounded-xl transition-all duration-500 group hover:border-prex-200 hover:shadow-md hover:bg-prex-50/30', listVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8']" :style="{ transitionDelay: `${index * 100 + 200}ms` }">
+                        <div v-for="(section, index) in tableOfContents" :key="section.number" :class="['flex items-start gap-5 p-5 bg-white border border-slate-200 rounded-xl transition-all duration-500 group hover:border-blue-200 hover:shadow-md hover:bg-blue-50/30', listVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8']" :style="{ transitionDelay: `${index * 100 + 200}ms` }">
                             <div class="relative flex-shrink-0">
-                                <div :class="['absolute inset-0 w-10 h-10 rounded-lg bg-prex-400/20 transition-all duration-500', listVisible ? 'animate-ping-slow' : 'opacity-0']" :style="{ animationDelay: `${index * 150}ms` }" />
-                                <div class="relative w-10 h-10 rounded-lg bg-prex-50 border border-prex-200 flex items-center justify-center text-prex-600 font-semibold text-sm group-hover:bg-prex-100 group-hover:border-prex-300 group-hover:scale-110 transition-all duration-300">{{ section.number }}</div>
+                                <div :class="['absolute inset-0 w-10 h-10 rounded-lg bg-blue-400/20 transition-all duration-500', listVisible ? 'animate-ping-slow' : 'opacity-0']" :style="{ animationDelay: `${index * 150}ms` }" />
+                                <div class="relative w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 font-semibold text-sm group-hover:bg-blue-100 group-hover:border-blue-300 group-hover:scale-110 transition-all duration-300">{{ section.number }}</div>
                             </div>
                             <div class="flex-1 min-w-0">
-                                <h3 class="text-slate-900 font-semibold mb-1 group-hover:text-prex-700 transition-colors">{{ section.title }}</h3>
+                                <h3 class="text-slate-900 font-semibold mb-1 group-hover:text-blue-700 transition-colors">{{ section.title }}</h3>
                                 <p class="text-slate-600 text-sm">{{ section.description }}</p>
                             </div>
-                            <div class="hidden sm:flex items-center text-slate-300 group-hover:text-prex-500 group-hover:translate-x-1 transition-all duration-300 self-center">
+                            <div class="hidden sm:flex items-center text-slate-300 group-hover:text-blue-500 group-hover:translate-x-1 transition-all duration-300 self-center">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
                             </div>
                         </div>

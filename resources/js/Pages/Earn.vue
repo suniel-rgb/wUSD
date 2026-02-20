@@ -3,8 +3,8 @@
         <!-- Hero Section -->
         <section class="section bg-white relative overflow-hidden">
             <div class="absolute inset-0 bg-grid opacity-40" />
-            <div class="absolute inset-0 bg-gradient-to-b from-pusd-50/30 to-transparent" />
-            <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-pusd-100/50 rounded-full blur-3xl" />
+            <div class="absolute inset-0 bg-gradient-to-b from-blue-50/30 to-transparent" />
+            <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl" />
 
             <div class="container-wide relative z-10">
                 <div class="max-w-4xl">
@@ -54,8 +54,8 @@
                 <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 mb-12">
                     <div class="max-w-2xl">
                         <div class="flex items-center gap-3 mb-4">
-                            <div class="w-14 h-14 rounded-xl bg-prex-50 border border-prex-200 flex items-center justify-center">
-                                <svg class="w-7 h-7 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            <div class="w-14 h-14 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center">
+                                <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
                             </div>
                             <div>
                                 <Badge variant="prex">Earn while you trade</Badge>
@@ -69,15 +69,15 @@
                     </div>
                     <div class="flex gap-4">
                         <div class="text-center px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl">
-                            <div class="text-2xl font-bold text-prex-600">100 wUSD</div>
+                            <div class="text-2xl font-bold text-blue-600">100 wUSD</div>
                             <div class="text-xs text-slate-600 mt-1">Signup Allocation</div>
                         </div>
                         <div class="text-center px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl">
-                            <div class="text-2xl font-bold text-prex-600">Up to 10%</div>
+                            <div class="text-2xl font-bold text-blue-600">Up to 10%</div>
                             <div class="text-xs text-slate-600 mt-1">LossLess™ Rebate</div>
                         </div>
                         <div class="text-center px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl">
-                            <div class="text-2xl font-bold text-prex-600">3 months</div>
+                            <div class="text-2xl font-bold text-blue-600">3 months</div>
                             <div class="text-xs text-slate-600 mt-1">Redemption Cliff</div>
                         </div>
                     </div>
@@ -85,9 +85,9 @@
 
                 <div class="grid lg:grid-cols-5 gap-4 mb-12">
                     <Card v-for="(step, index) in traderSteps" :key="index" class="p-5 relative">
-                        <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-prex-100 border border-prex-200 flex items-center justify-center text-prex-600 text-sm font-bold">{{ index + 1 }}</div>
-                        <div class="w-10 h-10 rounded-lg bg-prex-50 border border-prex-200 flex items-center justify-center mb-3 mt-2">
-                            <svg class="w-5 h-5 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="step.iconPath" /></svg>
+                        <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-600 text-sm font-bold">{{ index + 1 }}</div>
+                        <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center mb-3 mt-2">
+                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="step.iconPath" /></svg>
                         </div>
                         <h4 class="text-slate-900 font-semibold mb-2 text-sm">{{ step.title }}</h4>
                         <p class="text-slate-600 text-xs leading-relaxed">{{ step.description }}</p>
@@ -98,16 +98,16 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6">
-                    <Card class="p-6 border-prex-200">
+                    <Card class="p-6 border-blue-200">
                         <h4 class="text-slate-900 font-semibold mb-3 flex items-center gap-2">
-                            <svg class="w-5 h-5 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                             Best For
                         </h4>
                         <p class="text-slate-600 text-sm">Active traders who want to be rewarded for their activity while having downside protection.</p>
                     </Card>
-                    <Card class="p-6 border-prex-200">
+                    <Card class="p-6 border-blue-200">
                         <h4 class="text-slate-900 font-semibold mb-3 flex items-center gap-2">
-                            <svg class="w-5 h-5 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
+                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
                             Redemption Strategy
                         </h4>
                         <p class="text-slate-600 text-sm">Most traders prefer the USDT redemption path for stable, predictable returns—especially if they need liquidity. Long-term believers may wait for PREX conversion for potential upside.</p>
@@ -122,8 +122,8 @@
                 <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 mb-12">
                     <div class="max-w-2xl">
                         <div class="flex items-center gap-3 mb-4">
-                            <div class="w-14 h-14 rounded-xl bg-pusd-50 border border-pusd-200 flex items-center justify-center">
-                                <svg class="w-7 h-7 text-pusd-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                            <div class="w-14 h-14 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center">
+                                <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
                             </div>
                             <div>
                                 <Badge variant="pusd">Build your network, earn passively</Badge>
@@ -136,15 +136,15 @@
                     </div>
                     <div class="flex gap-4">
                         <div class="text-center px-6 py-4 bg-white border border-slate-200 rounded-xl shadow-sm">
-                            <div class="text-2xl font-bold text-pusd-600">5 Levels</div>
+                            <div class="text-2xl font-bold text-blue-600">5 Levels</div>
                             <div class="text-xs text-slate-600 mt-1">Referral Depth</div>
                         </div>
                         <div class="text-center px-6 py-4 bg-white border border-slate-200 rounded-xl shadow-sm">
-                            <div class="text-2xl font-bold text-pusd-600">10 wUSD</div>
+                            <div class="text-2xl font-bold text-blue-600">10 wUSD</div>
                             <div class="text-xs text-slate-600 mt-1">Per L1 Signup</div>
                         </div>
                         <div class="text-center px-6 py-4 bg-white border border-slate-200 rounded-xl shadow-sm">
-                            <div class="text-2xl font-bold text-pusd-600">Unlimited</div>
+                            <div class="text-2xl font-bold text-blue-600">Unlimited</div>
                             <div class="text-xs text-slate-600 mt-1">No Referral Cap</div>
                         </div>
                     </div>
@@ -152,9 +152,9 @@
 
                 <div class="grid lg:grid-cols-5 gap-4 mb-12">
                     <Card v-for="(step, index) in referrerSteps" :key="index" class="p-5 relative">
-                        <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-pusd-100 border border-pusd-200 flex items-center justify-center text-pusd-600 text-sm font-bold">{{ index + 1 }}</div>
-                        <div class="w-10 h-10 rounded-lg bg-pusd-50 border border-pusd-200 flex items-center justify-center mb-3 mt-2">
-                            <svg class="w-5 h-5 text-pusd-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="step.iconPath" /></svg>
+                        <div class="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-600 text-sm font-bold">{{ index + 1 }}</div>
+                        <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center mb-3 mt-2">
+                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="step.iconPath" /></svg>
                         </div>
                         <h4 class="text-slate-900 font-semibold mb-2 text-sm">{{ step.title }}</h4>
                         <p class="text-slate-600 text-xs leading-relaxed">{{ step.description }}</p>
@@ -165,16 +165,16 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6">
-                    <Card class="p-6 border-pusd-200">
+                    <Card class="p-6 border-blue-200">
                         <h4 class="text-slate-900 font-semibold mb-3 flex items-center gap-2">
-                            <svg class="w-5 h-5 text-pusd-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                             Best For
                         </h4>
                         <p class="text-slate-600 text-sm">Content creators, community leaders, and anyone with an audience interested in prediction markets.</p>
                     </Card>
-                    <Card class="p-6 border-pusd-200">
+                    <Card class="p-6 border-blue-200">
                         <h4 class="text-slate-900 font-semibold mb-3 flex items-center gap-2">
-                            <svg class="w-5 h-5 text-pusd-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
+                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
                             Redemption Strategy
                         </h4>
                         <p class="text-slate-600 text-sm">Referrers often prefer PREX conversion for growth exposure—their zero cost basis means any appreciation is pure upside. Those needing liquidity use USDT path.</p>
@@ -262,8 +262,8 @@
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
                     <Card v-for="(principle, index) in principles" :key="index" variant="hover" class="p-6 text-center">
-                        <div class="w-12 h-12 rounded-xl bg-prex-50 border border-prex-200 flex items-center justify-center mx-auto mb-4">
-                            <svg class="w-6 h-6 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="principle.iconPath" /></svg>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="principle.iconPath" /></svg>
                         </div>
                         <h4 class="text-slate-900 font-semibold mb-2">{{ principle.title }}</h4>
                         <p class="text-slate-600 text-sm">{{ principle.description }}</p>
@@ -302,8 +302,8 @@ import Badge from '@/Components/Badge.vue';
 import Card from '@/Components/Card.vue';
 
 const personas = [
-    { anchor: '#traders', title: 'For Traders', subtitle: 'Earn while you trade', iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6', iconBg: 'bg-prex-50', iconBorder: 'border-prex-200', iconColor: 'text-prex-600' },
-    { anchor: '#referrers', title: 'For Referrers', subtitle: 'Build your network, earn passively', iconPath: 'M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z', iconBg: 'bg-pusd-50', iconBorder: 'border-pusd-200', iconColor: 'text-pusd-600' },
+    { anchor: '#traders', title: 'For Traders', subtitle: 'Earn while you trade', iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6', iconBg: 'bg-blue-50', iconBorder: 'border-blue-200', iconColor: 'text-blue-600' },
+    { anchor: '#referrers', title: 'For Referrers', subtitle: 'Build your network, earn passively', iconPath: 'M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z', iconBg: 'bg-blue-50', iconBorder: 'border-blue-200', iconColor: 'text-blue-600' },
     { anchor: '#builders', title: 'For Builders', subtitle: 'Get funded to build', iconPath: 'M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z', iconBg: 'bg-emerald-50', iconBorder: 'border-emerald-200', iconColor: 'text-emerald-600' },
 ];
 

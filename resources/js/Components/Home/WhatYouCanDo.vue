@@ -1,50 +1,50 @@
 <template>
-    <section class="section bg-slate-50 relative overflow-hidden">
-        <!-- Floating background elements -->
-        <div class="absolute inset-0 pointer-events-none">
-            <div class="absolute top-24 right-[5%] w-16 h-16 opacity-10 animate-float-slow">
-                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
-            </div>
-            <div class="absolute bottom-32 left-[8%] w-12 h-12 opacity-15 animate-bob" style="animation-delay: -2s">
-                <img src="/logos/wusd-icon-transparent.png" alt="" class="w-full h-full object-contain" />
-            </div>
-        </div>
-
-        <div class="container-wide relative z-10">
+    <section class="py-20 md:py-28 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <Badge variant="pusd" class="mb-4">Utility</Badge>
-                <h2 class="heading-lg text-slate-900 mb-4">
-                    What Can You Do With <span class="text-gradient-pusd">wUSD</span>?
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
+                    What Can You Do With wUSD?
                 </h2>
-                <p class="text-lg text-slate-600">
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">
                     wUSD is immediately usable inside the ecosystem.
                 </p>
             </div>
 
             <!-- Utilities Grid -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card v-for="(utility, index) in utilities" :key="index" variant="hover" class="group">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    v-for="(utility, index) in utilities"
+                    :key="index"
+                    class="rounded-2xl border border-slate-200 bg-white shadow-sm p-6 h-full hover:shadow-md hover:border-slate-300 transition-all duration-300 group"
+                >
                     <div class="flex items-start justify-between mb-4">
-                        <div class="w-12 h-12 rounded-xl bg-pusd-50 border border-pusd-200 flex items-center justify-center group-hover:bg-pusd-100 transition-colors">
-                            <svg class="w-6 h-6 text-pusd-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="utility.iconPath" />
                             </svg>
                         </div>
-                        <Badge :variant="utility.status === 'Live' ? 'success' : 'default'">
+                        <span
+                            :class="[
+                                'inline-flex items-center px-3 py-1 rounded-full text-xs font-medium',
+                                utility.status === 'Live'
+                                    ? 'bg-emerald-50 text-emerald-600'
+                                    : 'bg-slate-100 text-slate-600',
+                            ]"
+                        >
                             {{ utility.status }}
-                        </Badge>
+                        </span>
                     </div>
                     <h3 class="text-lg font-semibold text-slate-900 mb-2">{{ utility.title }}</h3>
                     <p class="text-slate-600 text-sm">{{ utility.description }}</p>
-                </Card>
+                </div>
             </div>
 
             <!-- Spotlight: Attention Economy -->
-            <div class="mt-12 p-8 rounded-2xl bg-gradient-to-r from-pusd-50 to-prex-50 border border-pusd-200">
+            <div class="mt-12 p-6 rounded-2xl bg-blue-50 border border-blue-200">
                 <div class="flex flex-col md:flex-row items-center gap-6">
-                    <div class="w-16 h-16 rounded-2xl bg-pusd-100 flex items-center justify-center flex-shrink-0">
-                        <svg class="w-8 h-8 text-pusd-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
                         </svg>
@@ -58,9 +58,9 @@
                             facilitated by real user activity.
                         </p>
                     </div>
-                    <Link href="/how-it-works" class="btn-pusd whitespace-nowrap">
+                    <Link href="/how-it-works" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium transition-colors whitespace-nowrap">
                         Learn More
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                     </Link>

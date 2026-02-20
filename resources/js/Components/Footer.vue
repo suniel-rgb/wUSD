@@ -1,18 +1,16 @@
 <template>
-    <footer class="relative bg-slate-50 border-t border-slate-200">
-        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-prex-300/30 to-transparent"></div>
-
-        <div class="container-wide py-16 md:py-20">
+    <footer class="relative bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
             <!-- Main Footer Content -->
             <div class="grid grid-cols-2 md:grid-cols-6 gap-8 md:gap-12">
                 <!-- Brand Column -->
                 <div class="col-span-2">
                     <Link href="/" class="flex items-center gap-2.5 mb-5 group">
                         <img src="/logos/wusd-icon-transparent.png" alt="wUSD" class="w-9 h-9 object-contain" />
-                        <span class="text-xl font-semibold text-slate-900 tracking-tight">wUSD</span>
+                        <span class="text-xl font-semibold text-white tracking-tight">wUSD</span>
                     </Link>
-                    <p class="text-slate-700 font-medium text-sm mb-2">The User-First Algorithmic Token</p>
-                    <p class="text-slate-600 text-sm mb-6 max-w-xs leading-relaxed">
+                    <p class="text-slate-300 font-medium text-sm mb-2">The User-First Algorithmic Token</p>
+                    <p class="text-slate-400 text-sm mb-6 max-w-xs leading-relaxed">
                         Earned through activity. Backed by revenue. Built for real users.
                     </p>
                     <div class="flex gap-3">
@@ -20,7 +18,7 @@
                             v-for="item in socialLinks"
                             :key="item.name"
                             :href="item.href"
-                            class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-slate-400 hover:text-prex-600 hover:border-prex-200 hover:bg-prex-50 transition-all duration-200"
+                            class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-600 transition-all duration-200"
                             target="_blank"
                             rel="noopener noreferrer"
                             :aria-label="item.name"
@@ -32,10 +30,10 @@
 
                 <!-- Product -->
                 <div>
-                    <h3 class="text-xs font-semibold text-slate-800 uppercase tracking-wider mb-4">Product</h3>
+                    <h3 class="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-4">Product</h3>
                     <ul class="space-y-3">
                         <li v-for="link in footerLinks.product" :key="link.name">
-                            <Link :href="link.href" class="text-sm text-slate-600 hover:text-slate-900 transition-colors duration-200">
+                            <Link :href="link.href" class="text-sm text-slate-400 hover:text-white transition-colors duration-200">
                                 {{ link.name }}
                             </Link>
                         </li>
@@ -44,10 +42,10 @@
 
                 <!-- Resources -->
                 <div>
-                    <h3 class="text-xs font-semibold text-slate-800 uppercase tracking-wider mb-4">Resources</h3>
+                    <h3 class="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-4">Resources</h3>
                     <ul class="space-y-3">
                         <li v-for="link in footerLinks.resources" :key="link.name">
-                            <Link :href="link.href" class="text-sm text-slate-600 hover:text-slate-900 transition-colors duration-200">
+                            <Link :href="link.href" class="text-sm text-slate-400 hover:text-white transition-colors duration-200">
                                 {{ link.name }}
                             </Link>
                         </li>
@@ -56,10 +54,10 @@
 
                 <!-- Company -->
                 <div>
-                    <h3 class="text-xs font-semibold text-slate-800 uppercase tracking-wider mb-4">Company</h3>
+                    <h3 class="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-4">Company</h3>
                     <ul class="space-y-3">
                         <li v-for="link in footerLinks.company" :key="link.name">
-                            <a :href="link.href" class="text-sm text-slate-600 hover:text-slate-900 transition-colors duration-200">
+                            <a :href="link.href" class="text-sm text-slate-400 hover:text-white transition-colors duration-200">
                                 {{ link.name }}
                             </a>
                         </li>
@@ -68,10 +66,10 @@
 
                 <!-- Legal -->
                 <div>
-                    <h3 class="text-xs font-semibold text-slate-800 uppercase tracking-wider mb-4">Legal</h3>
+                    <h3 class="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-4">Legal</h3>
                     <ul class="space-y-3">
                         <li v-for="link in footerLinks.legal" :key="link.name">
-                            <Link :href="link.href" class="text-sm text-slate-600 hover:text-slate-900 transition-colors duration-200">
+                            <Link :href="link.href" class="text-sm text-slate-400 hover:text-white transition-colors duration-200">
                                 {{ link.name }}
                             </Link>
                         </li>
@@ -80,20 +78,20 @@
             </div>
 
             <!-- Bottom Bar -->
-            <div class="mt-14 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-sm text-slate-600">&copy; {{ new Date().getFullYear() }} Prex Markets. All rights reserved.</p>
+            <div class="mt-14 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-slate-500">&copy; {{ new Date().getFullYear() }} Prex Markets. All rights reserved.</p>
                 <div class="flex items-center gap-6">
-                    <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium bg-prex-50 text-prex-600 border border-prex-200">
-                        <span class="w-1.5 h-1.5 rounded-full bg-prex-500 mr-2 animate-pulse"></span>
+                    <span class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium bg-blue-900/50 text-blue-400 border border-blue-800">
+                        <span class="w-1.5 h-1.5 rounded-full bg-blue-400 mr-2 animate-pulse"></span>
                         wUSD Live
                     </span>
-                    <span class="text-sm text-slate-700 font-bold">wUSD is an algorithmic treasury-backed token</span>
+                    <span class="text-sm text-slate-400 font-medium">wUSD is an algorithmic treasury-backed token</span>
                 </div>
             </div>
 
             <!-- Disclaimer -->
-            <div class="mt-8 pt-6 border-t border-slate-200">
-                <p class="text-xs text-slate-400 leading-relaxed max-w-4xl mx-auto text-center">
+            <div class="mt-8 pt-6 border-t border-slate-800">
+                <p class="text-xs text-slate-600 leading-relaxed max-w-4xl mx-auto text-center">
                     wUSD is an algorithmic treasury-backed token issued by Prex Markets. It is not a fiat currency or security.
                     wUSD cannot be purchased on secondary markets and is earned exclusively through platform activity.
                     Redemption value fluctuates based on protocol revenue, treasury solvency, and redemption demand.

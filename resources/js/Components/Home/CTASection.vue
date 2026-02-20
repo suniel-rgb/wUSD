@@ -1,17 +1,12 @@
 <template>
-    <section class="section bg-slate-50 relative overflow-hidden">
-        <!-- Background Effects -->
-        <div class="absolute inset-0 bg-gradient-to-b from-white via-slate-50 to-white" />
-        <div class="absolute top-0 left-1/4 w-96 h-96 bg-prex-100/40 rounded-full blur-3xl" />
-        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-pusd-100/40 rounded-full blur-3xl" />
-
-        <div class="container-wide relative z-10">
+    <section class="py-20 md:py-28 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center">
                 <!-- Headline -->
-                <h2 class="heading-xl text-slate-900 mb-6">
-                    Start Earning <span class="text-gradient-pusd">wUSD</span> Today
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-6">
+                    Start Earning wUSD Today
                 </h2>
-                <p class="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto mb-8">
                     Trade on Prex Markets and earn treasury-backed rewards.
                     Zero cost basis. Real redemption value.
                 </p>
@@ -19,13 +14,13 @@
                 <!-- Feature Pills -->
                 <div class="flex flex-wrap justify-center gap-3 mb-10">
                     <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-sm text-slate-700 shadow-sm">
-                        <svg class="w-4 h-4 text-pusd-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                         Earned, Not Bought
                     </div>
                     <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-sm text-slate-700 shadow-sm">
-                        <svg class="w-4 h-4 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                         </svg>
                         Treasury-Backed
@@ -37,7 +32,7 @@
                         10% LossLess™ Rebate
                     </div>
                     <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-sm text-slate-700 shadow-sm">
-                        <svg class="w-4 h-4 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                         </svg>
                         USDT or PREX Redemption
@@ -46,13 +41,13 @@
 
                 <!-- CTAs -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://app.prex.markets" class="btn-primary btn-lg group inline-flex items-center">
+                    <a href="https://app.prex.markets" class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium transition-colors group">
                         Start Earning Now
-                        <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
                     </a>
-                    <Link href="/how-it-works" class="btn-secondary btn-lg">
+                    <Link href="/how-it-works" class="inline-flex items-center justify-center border border-slate-300 hover:border-slate-400 text-slate-700 px-6 py-3 rounded-xl font-medium transition-colors">
                         Learn How It Works
                     </Link>
                 </div>

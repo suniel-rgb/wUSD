@@ -1,8 +1,8 @@
 <template>
-    <section class="py-24 md:py-32 bg-slate-50 relative">
-        <div class="max-w-4xl mx-auto px-6">
+    <section class="py-20 md:py-28 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-14">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
                     FAQs
                 </h2>
             </div>
@@ -11,7 +11,7 @@
                 <div
                     v-for="(faq, index) in faqs"
                     :key="index"
-                    class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm"
+                    class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm"
                 >
                     <button
                         class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-slate-50 transition-colors"
@@ -47,7 +47,7 @@
             <div class="text-center mt-10">
                 <Link
                     href="/faq"
-                    class="inline-flex items-center gap-2 text-prex-600 hover:text-prex-500 font-medium transition-colors group"
+                    class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors group"
                 >
                     Read all FAQs
                     <svg

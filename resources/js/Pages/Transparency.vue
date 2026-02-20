@@ -49,8 +49,8 @@
                         <p class="text-lg text-slate-600 mb-8">The Solvency Pool is the USDT reserve that backs wUSD redemptions. It grows through protocol revenue and is protected by the 3-month cliff and redemption epoch system.</p>
                         <div class="space-y-6">
                             <div v-for="(item, index) in solvencyFeatures" :key="index" class="flex gap-4">
-                                <div class="w-10 h-10 rounded-lg bg-prex-50 border border-prex-200 flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="item.iconPath" /></svg>
+                                <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="item.iconPath" /></svg>
                                 </div>
                                 <div><h3 class="text-slate-900 font-semibold mb-1">{{ item.title }}</h3><p class="text-slate-600 text-sm">{{ item.description }}</p></div>
                             </div>
@@ -60,16 +60,16 @@
                         <h3 class="text-xl font-semibold text-slate-900 mb-6 flex items-center gap-2">Revenue Allocation</h3>
                         <div class="space-y-4 mb-8">
                             <p class="text-slate-600 text-sm mb-4">All protocol revenue (trading fees + subscriptions) is split 50/50:</p>
-                            <div class="flex items-center gap-4"><div class="w-3 h-3 rounded-full bg-prex-500" /><div class="flex-1 text-slate-700">Solvency Treasury (USDT)</div><div class="text-slate-900 font-semibold">50%</div></div>
-                            <div class="flex items-center gap-4"><div class="w-3 h-3 rounded-full bg-pusd-500" /><div class="flex-1 text-slate-700">Community & Affiliates</div><div class="text-slate-900 font-semibold">50%</div></div>
+                            <div class="flex items-center gap-4"><div class="w-3 h-3 rounded-full bg-blue-500" /><div class="flex-1 text-slate-700">Solvency Treasury (USDT)</div><div class="text-slate-900 font-semibold">50%</div></div>
+                            <div class="flex items-center gap-4"><div class="w-3 h-3 rounded-full bg-blue-500" /><div class="flex-1 text-slate-700">Community & Affiliates</div><div class="text-slate-900 font-semibold">50%</div></div>
                         </div>
                         <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl mb-6">
                             <div class="text-sm text-slate-600 mb-2">Redemption Value Formula</div>
-                            <div class="font-mono text-lg text-prex-600">Value = Pool USDT ÷ Redeeming wUSD</div>
+                            <div class="font-mono text-lg text-blue-600">Value = Pool USDT ÷ Redeeming wUSD</div>
                         </div>
-                        <div class="p-4 bg-prex-50 border border-prex-200 rounded-xl">
-                            <div class="flex items-center gap-2 text-prex-600 mb-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg><span class="font-semibold">Example Calculation</span></div>
-                            <p class="text-slate-600 text-sm">Pool: <span class="text-slate-900 font-medium">$2,500,000 USDT</span><br />Opting to Redeem: <span class="text-slate-900 font-medium">8,200,000 wUSD</span><br />Value per wUSD: <span class="text-prex-600 font-semibold">$0.30</span></p>
+                        <div class="p-4 bg-blue-50 border border-blue-200 rounded-xl">
+                            <div class="flex items-center gap-2 text-blue-600 mb-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg><span class="font-semibold">Example Calculation</span></div>
+                            <p class="text-slate-600 text-sm">Pool: <span class="text-slate-900 font-medium">$2,500,000 USDT</span><br />Opting to Redeem: <span class="text-slate-900 font-medium">8,200,000 wUSD</span><br />Value per wUSD: <span class="text-blue-600 font-semibold">$0.30</span></p>
                         </div>
                     </Card>
                 </div>

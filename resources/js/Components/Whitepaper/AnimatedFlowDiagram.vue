@@ -12,7 +12,7 @@
             <!-- Flow Diagram -->
             <div ref="flowRef" class="max-w-4xl mx-auto mb-20">
                 <div :class="['text-center mb-12 transition-all duration-700', flowVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8']">
-                    <p class="text-sm font-semibold text-prex-600 uppercase tracking-wider mb-3">How wUSD Works</p>
+                    <p class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">How wUSD Works</p>
                     <h2 class="heading-md">The Complete Lifecycle</h2>
                 </div>
 
@@ -36,7 +36,7 @@
                             <!-- Desktop arrow -->
                             <div v-if="i < steps.length - 1" :class="['hidden md:flex items-center mx-3 transition-all duration-700', flowVisible ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0']" :style="{ transitionDelay: `${i * 200 + 350}ms` }">
                                 <div class="w-16 lg:w-24 h-[2px] bg-gradient-to-r from-slate-300 to-slate-200 relative">
-                                    <div class="absolute inset-0 bg-gradient-to-r from-prex-400 to-pusd-400 animate-flow-right rounded-full" />
+                                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-400 animate-flow-right rounded-full" />
                                 </div>
                                 <svg class="w-4 h-4 text-slate-400 -ml-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
                             </div>
@@ -76,8 +76,8 @@ const count2 = useCountUp(16, 1500, statsVisibleRef);
 const countValues = computed(() => [count0.value, count1.value, count2.value]);
 
 const steps = [
-    { label: 'Trade', sublabel: 'on Prex Markets', color: 'from-prex-400 to-prex-600', borderColor: 'border-prex-200', bgColor: 'bg-prex-50', textColor: 'text-prex-600', iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6' },
-    { label: 'Earn', sublabel: 'wUSD rewards', color: 'from-pusd-400 to-pusd-600', borderColor: 'border-pusd-200', bgColor: 'bg-pusd-50', textColor: 'text-pusd-600', iconPath: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1' },
+    { label: 'Trade', sublabel: 'on Prex Markets', color: 'from-blue-400 to-blue-600', borderColor: 'border-blue-200', bgColor: 'bg-blue-50', textColor: 'text-blue-600', iconPath: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6' },
+    { label: 'Earn', sublabel: 'wUSD rewards', color: 'from-blue-400 to-blue-600', borderColor: 'border-blue-200', bgColor: 'bg-blue-50', textColor: 'text-blue-600', iconPath: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1' },
     { label: 'Redeem', sublabel: 'for USDT or PREX', color: 'from-emerald-400 to-emerald-600', borderColor: 'border-emerald-200', bgColor: 'bg-emerald-50', textColor: 'text-emerald-600', iconPath: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' },
 ];
 

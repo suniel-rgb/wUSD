@@ -3,8 +3,8 @@
         <!-- Hero Section -->
         <section class="section bg-white relative overflow-hidden">
             <div class="absolute inset-0 bg-grid opacity-40" />
-            <div class="absolute inset-0 bg-gradient-to-b from-prex-50/30 to-transparent" />
-            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-prex-100/50 rounded-full blur-3xl" />
+            <div class="absolute inset-0 bg-gradient-to-b from-blue-50/30 to-transparent" />
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl" />
             <div class="container-wide relative z-10">
                 <div class="max-w-4xl">
                     <Badge variant="prex" class="mb-6">Help Center</Badge>
@@ -20,7 +20,7 @@
                 <div class="max-w-4xl mx-auto">
                     <div v-for="(category, categoryIndex) in faqCategories" :key="categoryIndex" class="mb-12">
                         <h2 class="heading-md mb-6 flex items-center gap-3">
-                            <span class="w-8 h-8 rounded-lg bg-prex-50 border border-prex-200 flex items-center justify-center text-prex-600 text-sm font-bold">{{ categoryIndex + 1 }}</span>
+                            <span class="w-8 h-8 rounded-lg bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 text-sm font-bold">{{ categoryIndex + 1 }}</span>
                             {{ category.title }}
                         </h2>
                         <div class="space-y-4">

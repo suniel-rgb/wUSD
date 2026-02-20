@@ -1,10 +1,8 @@
 <template>
-    <section class="section relative bg-white">
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-50/50 to-transparent" />
-
-        <div class="container-wide relative z-10">
+    <section class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Stats Row -->
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-20">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
                 <StatCard value="$2.5M+" label="Solvency Pool" variant="prex" />
                 <StatCard value="12.4M" label="wUSD Earned" variant="pusd" />
                 <StatCard value="$0.20" label="Implied Value" variant="default" />
@@ -12,26 +10,25 @@
             </div>
 
             <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <Badge variant="prex" class="mb-6">Trust & Transparency</Badge>
-                <h2 class="heading-lg mb-6">
-                    Built for <span class="text-gradient">Accountability</span>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-6">
+                    Built for Accountability
                 </h2>
-                <p class="text-body-lg">
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">
                     wUSD is backed by verifiable revenue, not promises. Transparent treasury,
                     public wallets, honest risk disclosure.
                 </p>
             </div>
 
             <!-- Trust Features Grid -->
-            <div class="grid md:grid-cols-2 gap-5 mb-14">
+            <div class="grid md:grid-cols-2 gap-6 mb-14">
                 <div
                     v-for="(feature, index) in trustFeatures"
                     :key="index"
-                    class="card-hover flex gap-5 group"
+                    class="rounded-2xl border border-slate-200 bg-white shadow-sm p-6 hover:shadow-md hover:border-slate-300 transition-all duration-300 flex gap-5 group"
                 >
-                    <div class="feature-icon-prex flex-shrink-0 group-hover:border-prex-300 transition-colors">
-                        <svg class="w-5 h-5 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="feature.iconPath" />
                         </svg>
                     </div>
@@ -43,7 +40,7 @@
             </div>
 
             <!-- Key Commitments -->
-            <div class="grid md:grid-cols-3 gap-4 mb-14">
+            <div class="grid md:grid-cols-3 gap-6 mb-14">
                 <div
                     v-for="(commitment, index) in commitments"
                     :key="index"
@@ -58,7 +55,7 @@
 
             <!-- CTA -->
             <div class="text-center">
-                <Link href="/transparency" class="btn-primary inline-flex items-center gap-2 group">
+                <Link href="/transparency" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium transition-colors group">
                     View Transparency Dashboard
                     <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

@@ -3,12 +3,12 @@
         <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
             <!-- Background Effects -->
             <div class="absolute inset-0">
-                <div class="absolute top-1/4 left-1/4 w-[800px] h-[800px] bg-prex-100/50 rounded-full blur-[150px]" />
-                <div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-pusd-100/40 rounded-full blur-[120px]" />
+                <div class="absolute top-1/4 left-1/4 w-[800px] h-[800px] bg-blue-100/50 rounded-full blur-[150px]" />
+                <div class="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-amber-100/40 rounded-full blur-[120px]" />
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-20">
-                    <div class="absolute inset-0 rounded-full border border-prex-300 animate-rotate-slower" />
-                    <div class="absolute inset-8 rounded-full border border-dashed border-prex-200 animate-rotate-slow" style="animation-direction: reverse" />
-                    <div class="absolute inset-16 rounded-full border border-pusd-200 animate-rotate-slower" />
+                    <div class="absolute inset-0 rounded-full border border-blue-300 animate-rotate-slower" />
+                    <div class="absolute inset-8 rounded-full border border-dashed border-blue-200 animate-rotate-slow" style="animation-direction: reverse" />
+                    <div class="absolute inset-16 rounded-full border border-blue-200 animate-rotate-slower" />
                 </div>
             </div>
 
@@ -17,8 +17,8 @@
                     <!-- Content Side -->
                     <div :class="['text-center lg:text-left transition-all duration-1000', mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8']">
                         <div class="flex items-center justify-center lg:justify-start gap-3 mb-6">
-                            <span class="w-2 h-2 rounded-full bg-pusd-500 animate-pulse" />
-                            <span class="text-pusd-600 font-mono text-sm tracking-wider">REWARD ASSET</span>
+                            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                            <span class="text-amber-600 font-mono text-sm tracking-wider">REWARD ASSET</span>
                         </div>
 
                         <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 tracking-tight mb-6">
@@ -33,13 +33,13 @@
                         <div :class="['flex flex-col sm:flex-row gap-4 justify-center lg:justify-start transition-all duration-1000 delay-200', mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8']">
                             <a
                                 href="https://app.prex.markets/signup"
-                                class="px-8 py-4 text-base font-medium text-white bg-prex-600 hover:bg-prex-500 rounded-full transition-all duration-200 shadow-lg shadow-prex-600/25 hover:shadow-prex-500/30 hover:scale-105"
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 rounded-xl font-semibold text-lg transition-colors"
                             >
                                 Create Account
                             </a>
                             <Link
                                 href="/how-it-works"
-                                class="px-8 py-4 text-base font-medium text-slate-700 border border-slate-300 hover:border-slate-400 hover:text-slate-900 rounded-full transition-all duration-200 bg-white hover:scale-105"
+                                class="border border-slate-300 hover:border-slate-400 text-slate-700 px-8 py-3.5 rounded-xl font-medium text-lg transition-colors bg-white"
                             >
                                 Learn How wUSD Works
                             </Link>
@@ -48,16 +48,16 @@
                         <!-- Stats row -->
                         <div :class="['mt-12 grid grid-cols-3 gap-6 max-w-md mx-auto lg:mx-0 transition-all duration-1000 delay-300', mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8']">
                             <div class="text-center lg:text-left">
-                                <div class="text-2xl md:text-3xl font-bold text-prex-600">100</div>
-                                <div class="text-xs text-slate-600">wUSD on signup</div>
+                                <div class="text-2xl font-bold text-blue-600">100</div>
+                                <div class="text-sm text-slate-500">wUSD on signup</div>
                             </div>
                             <div class="text-center lg:text-left">
-                                <div class="text-2xl md:text-3xl font-bold text-prex-600">50/50</div>
-                                <div class="text-xs text-slate-600">Revenue split</div>
+                                <div class="text-2xl font-bold text-blue-600">50/50</div>
+                                <div class="text-sm text-slate-500">Revenue split</div>
                             </div>
                             <div class="text-center lg:text-left">
-                                <div class="text-2xl md:text-3xl font-bold text-prex-600">10%</div>
-                                <div class="text-xs text-slate-600">LossLess™ rebate</div>
+                                <div class="text-2xl font-bold text-blue-600">10%</div>
+                                <div class="text-sm text-slate-500">LossLess™ rebate</div>
                             </div>
                         </div>
                     </div>
@@ -85,8 +85,8 @@
                         <div class="flex items-center justify-center gap-4 md:gap-8">
                             <!-- Trade -->
                             <div class="flex flex-col items-center group">
-                                <div class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-prex-50 to-prex-100 border border-prex-200 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform shadow-sm">
-                                    <svg class="w-7 h-7 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform shadow-sm">
+                                    <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                                     </svg>
                                 </div>
@@ -95,8 +95,8 @@
 
                             <!-- Arrow -->
                             <div class="flex items-center">
-                                <div class="w-8 md:w-16 h-0.5 bg-gradient-to-r from-prex-300 to-prex-400 rounded-full" />
-                                <svg class="w-3 h-3 text-prex-400 -ml-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <div class="w-8 md:w-16 h-0.5 bg-gradient-to-r from-blue-300 to-blue-400 rounded-full" />
+                                <svg class="w-3 h-3 text-blue-400 -ml-0.5" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                                 </svg>
                             </div>
@@ -116,7 +116,7 @@
 
                             <!-- Arrow -->
                             <div class="flex items-center">
-                                <div class="w-8 md:w-16 h-0.5 bg-gradient-to-r from-prex-400 to-emerald-400 rounded-full" />
+                                <div class="w-8 md:w-16 h-0.5 bg-gradient-to-r from-blue-400 to-emerald-400 rounded-full" />
                                 <svg class="w-3 h-3 text-emerald-400 -ml-0.5" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                                 </svg>

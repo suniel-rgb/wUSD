@@ -40,10 +40,10 @@
         <!-- Orbiting dots -->
         <template v-if="animated">
             <div class="absolute inset-0 animate-orbit">
-                <div class="w-3 h-3 rounded-full bg-prex-500 shadow-lg" />
+                <div class="w-3 h-3 rounded-full bg-blue-500 shadow-lg" />
             </div>
             <div class="absolute inset-0 animate-orbit-reverse" style="animation-delay: -5s">
-                <div class="w-2 h-2 rounded-full bg-prex-300 shadow-lg" />
+                <div class="w-2 h-2 rounded-full bg-blue-300 shadow-lg" />
             </div>
         </template>
     </div>

@@ -3,7 +3,7 @@
         <!-- Animated orbs -->
         <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
             <div v-for="(orb, i) in orbs" :key="'orb-'+i" class="absolute rounded-full animate-float-slow blur-3xl" :style="{ width: orb.size + 'px', height: orb.size + 'px', left: orb.left, top: orb.top, background: orb.color, animationDelay: orb.delay }" />
-            <div v-for="(s, i) in sparkles" :key="'sparkle-'+i" class="absolute rounded-full bg-prex-400/30 animate-sparkle" :style="{ left: s.left, top: s.top, width: s.size + 'px', height: s.size + 'px', animationDelay: s.delay }" />
+            <div v-for="(s, i) in sparkles" :key="'sparkle-'+i" class="absolute rounded-full bg-blue-400/30 animate-sparkle" :style="{ left: s.left, top: s.top, width: s.size + 'px', height: s.size + 'px', animationDelay: s.delay }" />
         </div>
 
         <div class="container-wide relative z-10">

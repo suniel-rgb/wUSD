@@ -242,7 +242,7 @@
                             <li>Withdraw consent at any time</li>
                             <li>Opt out of marketing communications</li>
                         </ul>
-                        <p class="text-slate-600 mb-8">To exercise any of these rights, please contact us at <a href="mailto:privacy@wusd.finance" class="text-prex-600 hover:underline">privacy@wusd.finance</a>.</p>
+                        <p class="text-slate-600 mb-8">To exercise any of these rights, please contact us at <a href="mailto:privacy@wusd.finance" class="text-blue-600 hover:underline">privacy@wusd.finance</a>.</p>
 
                         <h2 class="text-xl font-semibold text-slate-900 mb-4">8. International Data Transfers</h2>
                         <p class="text-slate-600 mb-8">Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place, including standard contractual clauses and other legal mechanisms, to protect your data during such transfers.</p>
@@ -256,14 +256,14 @@
                         <h2 class="text-xl font-semibold text-slate-900 mb-4">11. Contact Us</h2>
                         <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 mb-6">
                             <p class="text-slate-700 font-semibold mb-2">Prex Markets</p>
-                            <p class="text-slate-600 mb-1">Privacy inquiries: <a href="mailto:privacy@wusd.finance" class="text-prex-600 hover:underline">privacy@wusd.finance</a></p>
-                            <p class="text-slate-600 mb-1">Legal: <a href="mailto:legal@wusd.finance" class="text-prex-600 hover:underline">legal@wusd.finance</a></p>
-                            <p class="text-slate-600 mb-1">Website: <a href="https://www.wusd.finance" class="text-prex-600 hover:underline">www.wusd.finance</a></p>
-                            <p class="text-slate-600">Support: <a href="mailto:support@prex.markets" class="text-prex-600 hover:underline">support@prex.markets</a></p>
+                            <p class="text-slate-600 mb-1">Privacy inquiries: <a href="mailto:privacy@wusd.finance" class="text-blue-600 hover:underline">privacy@wusd.finance</a></p>
+                            <p class="text-slate-600 mb-1">Legal: <a href="mailto:legal@wusd.finance" class="text-blue-600 hover:underline">legal@wusd.finance</a></p>
+                            <p class="text-slate-600 mb-1">Website: <a href="https://www.wusd.finance" class="text-blue-600 hover:underline">www.wusd.finance</a></p>
+                            <p class="text-slate-600">Support: <a href="mailto:support@prex.markets" class="text-blue-600 hover:underline">support@prex.markets</a></p>
                         </div>
 
-                        <div class="bg-prex-50 border border-prex-200 rounded-lg p-4">
-                            <p class="text-prex-800 font-semibold text-center">BY USING THE PLATFORM, YOU ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTOOD THIS PRIVACY POLICY.</p>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <p class="text-blue-800 font-semibold text-center">BY USING THE PLATFORM, YOU ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTOOD THIS PRIVACY POLICY.</p>
                         </div>
                     </div>
                 </Card>

@@ -1,13 +1,6 @@
 <template>
-    <header
-        :class="[
-            'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-            scrolled
-                ? 'bg-white/95 backdrop-blur-xl border-b border-slate-200/80 shadow-sm'
-                : 'bg-transparent'
-        ]"
-    >
-        <nav class="max-w-7xl mx-auto px-6">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200/60">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Logo -->
                 <Link href="/" class="flex items-center gap-3 group">
@@ -21,7 +14,7 @@
                         v-for="item in navigation"
                         :key="item.name"
                         :href="item.href"
-                        class="px-5 py-2.5 text-sm text-slate-600 hover:text-slate-900 transition-colors duration-200 font-medium"
+                        class="px-4 py-2 text-sm text-slate-600 hover:text-slate-900 transition-colors font-medium"
                     >
                         {{ item.name }}
                     </Link>
@@ -32,7 +25,7 @@
                     <a href="https://app.prex.markets" class="px-4 py-2 text-sm text-slate-600 hover:text-slate-900 transition-colors font-medium">
                         Log In
                     </a>
-                    <a href="https://app.prex.markets" class="px-5 py-2.5 text-sm font-medium text-white bg-prex-600 hover:bg-prex-500 rounded-full transition-all duration-200 shadow-md shadow-prex-600/20">
+                    <a href="https://app.prex.markets" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl text-sm font-medium transition-colors">
                         Start Earning
                     </a>
                 </div>
@@ -69,10 +62,10 @@
                         {{ item.name }}
                     </Link>
                     <div class="mt-4 px-4 flex flex-col gap-3">
-                        <a href="https://app.prex.markets" class="w-full py-3 text-center text-sm font-medium text-slate-600 border border-slate-200 rounded-full hover:border-slate-300 transition-colors">
+                        <a href="https://app.prex.markets" class="w-full py-3 text-center text-sm font-medium text-slate-600 border border-slate-200 rounded-xl hover:border-slate-300 transition-colors">
                             Log In
                         </a>
-                        <a href="https://app.prex.markets" class="w-full py-3 text-center text-sm font-medium text-white bg-prex-600 hover:bg-prex-500 rounded-full transition-colors">
+                        <a href="https://app.prex.markets" class="w-full py-3 text-center text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors">
                             Start Earning
                         </a>
                     </div>
@@ -83,7 +76,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref } from 'vue';
 import { Link } from '@inertiajs/vue3';
 
 const navigation = [
@@ -95,12 +88,4 @@ const navigation = [
 ];
 
 const mobileMenuOpen = ref(false);
-const scrolled = ref(false);
-
-const handleScroll = () => {
-    scrolled.value = window.scrollY > 20;
-};
-
-onMounted(() => window.addEventListener('scroll', handleScroll));
-onUnmounted(() => window.removeEventListener('scroll', handleScroll));
 </script>

@@ -47,12 +47,12 @@ const tabStyles = {
     },
     pills: {
         base: 'px-4 py-2 rounded-full text-sm font-medium transition-all border',
-        active: 'bg-prex-600 text-white border-prex-600',
+        active: 'bg-blue-600 text-white border-blue-600',
         inactive: 'bg-transparent text-slate-600 border-slate-300 hover:text-slate-900 hover:border-slate-400',
     },
     underline: {
         base: 'px-4 py-3 text-sm font-medium transition-all border-b-2 -mb-px',
-        active: 'text-slate-900 border-prex-600',
+        active: 'text-slate-900 border-blue-600',
         inactive: 'text-slate-600 border-transparent hover:text-slate-700 hover:border-slate-300',
     },
 };

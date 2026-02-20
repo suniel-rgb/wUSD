@@ -1,5 +1,5 @@
 <template>
-    <section class="py-24 md:py-32 bg-white relative overflow-hidden">
+    <section class="py-20 md:py-28 bg-white relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-slate-50/50 to-transparent" />
 
         <!-- Floating animated logos in background -->
@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <!-- Animated logo above title -->
             <div class="flex justify-center mb-8">
                 <div class="relative">
@@ -30,42 +30,42 @@
                         />
                     </div>
                     <div class="absolute inset-0 animate-orbit">
-                        <div class="w-2 h-2 rounded-full bg-prex-500 shadow-lg" />
+                        <div class="w-2 h-2 rounded-full bg-blue-500 shadow-lg" />
                     </div>
                 </div>
             </div>
 
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-6">
                 What is wUSD?
             </h2>
 
-            <p class="text-lg md:text-xl text-slate-600 leading-relaxed mb-6 max-w-3xl mx-auto">
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto mb-6">
                 wUSD is a Proof-of-Activity digital asset designed to reward real users, not speculators.
             </p>
 
-            <p class="text-lg md:text-xl text-slate-700 font-medium mb-10 max-w-3xl mx-auto">
+            <p class="text-lg text-slate-700 font-medium max-w-2xl mx-auto mb-10">
                 You don't buy wUSD. You earn it by participating in the Prex Markets ecosystem.
             </p>
 
-            <!-- Feature bullets -->
-            <div class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-10">
+            <!-- Feature cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-10">
                 <div
                     v-for="(feature, index) in features"
                     :key="index"
-                    class="flex items-center gap-3 p-4 bg-slate-50 border border-slate-200 rounded-xl text-left"
+                    class="rounded-2xl border border-slate-200 bg-slate-50/50 p-6 flex items-start gap-3 text-left"
                 >
-                    <div class="w-2 h-2 rounded-full bg-pusd-500 flex-shrink-0" />
-                    <span class="text-slate-700">{{ feature }}</span>
+                    <div class="w-2.5 h-2.5 rounded-full bg-amber-400 mt-2 flex-shrink-0" />
+                    <span class="text-slate-700 text-sm">{{ feature }}</span>
                 </div>
             </div>
 
-            <p class="text-lg md:text-xl text-slate-700 font-semibold mb-10 max-w-3xl mx-auto">
+            <p class="text-lg text-slate-700 font-medium max-w-2xl mx-auto mb-10">
                 wUSD aligns the platform's success with its users' success.
             </p>
 
             <Link
                 href="/how-it-works"
-                class="inline-flex items-center gap-2 text-prex-600 hover:text-prex-500 font-medium transition-colors group"
+                class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors group"
             >
                 Learn How wUSD Works
                 <svg

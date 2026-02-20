@@ -1,23 +1,22 @@
 <template>
-    <section class="section bg-white">
-        <div class="container-wide">
+    <section class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <Badge variant="prex" class="mb-4">Two Strategic Paths</Badge>
-                <h2 class="heading-lg text-slate-900 mb-4">
-                    Redeeming <span class="text-gradient">wUSD</span>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
+                    Redeeming wUSD
                 </h2>
-                <p class="text-lg text-slate-600">
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">
                     wUSD gives users a choice: liquidity now or treasury later.
                 </p>
             </div>
 
             <!-- Redemption Paths -->
-            <div class="grid lg:grid-cols-2 gap-8">
+            <div class="grid lg:grid-cols-2 gap-6">
                 <!-- Path A: USDT -->
-                <Card class="p-8 border-prex-200">
+                <div class="rounded-2xl border border-blue-200 bg-white shadow-sm p-6 hover:shadow-md transition-all duration-300">
                     <div class="flex items-center gap-2 mb-6">
-                        <Badge variant="prex">Path A</Badge>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-600">Path A</span>
                         <span class="text-slate-600 text-sm">USDT Liquidity</span>
                     </div>
 
@@ -37,7 +36,7 @@
 
                     <div class="space-y-4 mb-6">
                         <div class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-prex-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             <div>
@@ -46,7 +45,7 @@
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-prex-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                             </svg>
                             <div>
@@ -55,7 +54,7 @@
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-prex-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                             </svg>
                             <div>
@@ -65,22 +64,22 @@
                         </div>
                     </div>
 
-                    <div class="p-4 rounded-xl bg-prex-50 border border-prex-200">
+                    <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
                         <div class="text-sm text-slate-600 mb-1">Example Scenario</div>
                         <div class="text-slate-900">
-                            Pool: <span class="text-prex-600 font-semibold">$500,000 USDT</span> •
-                            Redeeming: <span class="text-prex-600 font-semibold">400,000 wUSD</span>
+                            Pool: <span class="text-blue-600 font-semibold">$500,000 USDT</span> •
+                            Redeeming: <span class="text-blue-600 font-semibold">400,000 wUSD</span>
                         </div>
                         <div class="text-slate-600 text-sm mt-1">
                             = <span class="text-slate-900 font-semibold">$1.25 per wUSD</span> redemption value
                         </div>
                     </div>
-                </Card>
+                </div>
 
                 <!-- Path B: PREX -->
-                <Card class="p-8 border-pusd-300">
+                <div class="rounded-2xl border border-blue-200 bg-white shadow-sm p-6 hover:shadow-md transition-all duration-300">
                     <div class="flex items-center gap-2 mb-6">
-                        <Badge variant="pusd">Path B</Badge>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-600">Path B</span>
                         <span class="text-slate-600 text-sm">Long-term Value</span>
                     </div>
 
@@ -100,7 +99,7 @@
 
                     <div class="space-y-4 mb-6">
                         <div class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-pusd-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                             </svg>
                             <div>
@@ -109,7 +108,7 @@
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-pusd-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             <div>
@@ -118,7 +117,7 @@
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-pusd-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                             </svg>
                             <div>
@@ -128,22 +127,22 @@
                         </div>
                     </div>
 
-                    <div class="p-4 rounded-xl bg-pusd-50 border border-pusd-200">
+                    <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
                         <div class="text-sm text-slate-600 mb-1">Conversion Benefit</div>
                         <div class="text-slate-900">
-                            <span class="text-pusd-600 font-semibold">1:1 ratio</span> •
+                            <span class="text-blue-600 font-semibold">1:1 ratio</span> •
                             Potential upside if PREX appreciates during vest
                         </div>
                         <div class="text-slate-600 text-sm mt-1">
                             Zero cost basis + growth exposure = <span class="text-slate-900 font-semibold">pure alpha</span>
                         </div>
                     </div>
-                </Card>
+                </div>
             </div>
 
             <!-- CTA -->
             <div class="mt-12 text-center">
-                <Link href="/transparency" class="btn-secondary inline-flex items-center gap-2">
+                <Link href="/transparency" class="inline-flex items-center gap-2 border border-slate-300 hover:border-slate-400 text-slate-700 px-6 py-3 rounded-xl font-medium transition-colors">
                     View Transparency Dashboard
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

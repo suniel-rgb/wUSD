@@ -140,7 +140,7 @@
                         <p class="text-slate-600 mb-6"><strong>7.3. Restrictions:</strong> You may not copy, modify, distribute, sell, or lease any part of the Platform without our express written consent.</p>
 
                         <h2 class="text-xl font-semibold text-slate-900 mb-4">8. Privacy</h2>
-                        <p class="text-slate-600 mb-6">Your use of the Platform is subject to our <Link href="/legal/privacy" class="text-prex-600 hover:underline">Privacy Policy</Link>, which is incorporated into these Terms by reference.</p>
+                        <p class="text-slate-600 mb-6">Your use of the Platform is subject to our <Link href="/legal/privacy" class="text-blue-600 hover:underline">Privacy Policy</Link>, which is incorporated into these Terms by reference.</p>
 
                         <h2 class="text-xl font-semibold text-slate-900 mb-4">9. Disclaimers</h2>
                         <div class="bg-slate-100 border border-slate-200 rounded-lg p-4 mb-6">
@@ -181,7 +181,7 @@
                         </ul>
 
                         <h2 class="text-xl font-semibold text-slate-900 mb-4">12. Dispute Resolution</h2>
-                        <p class="text-slate-600 mb-3"><strong>12.1. Informal Resolution:</strong> Before initiating formal proceedings, you agree to contact us at <a href="mailto:legal@wusd.finance" class="text-prex-600 hover:underline">legal@wusd.finance</a> to attempt to resolve any dispute informally within 30 days.</p>
+                        <p class="text-slate-600 mb-3"><strong>12.1. Informal Resolution:</strong> Before initiating formal proceedings, you agree to contact us at <a href="mailto:legal@wusd.finance" class="text-blue-600 hover:underline">legal@wusd.finance</a> to attempt to resolve any dispute informally within 30 days.</p>
                         <p class="text-slate-600 mb-3"><strong>12.2. Arbitration:</strong> Any dispute not resolved informally shall be resolved by binding arbitration under the rules of the Dubai International Arbitration Centre (DIAC), conducted in English in Dubai, UAE.</p>
                         <p class="text-slate-600 mb-3"><strong>12.3. Class Action Waiver:</strong> YOU AGREE TO RESOLVE DISPUTES ONLY ON AN INDIVIDUAL BASIS AND WAIVE ANY RIGHT TO PARTICIPATE IN CLASS ACTIONS OR CLASS ARBITRATIONS.</p>
                         <p class="text-slate-600 mb-6"><strong>12.4. Injunctive Relief:</strong> Notwithstanding the above, either party may seek injunctive relief in any court of competent jurisdiction.</p>
@@ -208,14 +208,14 @@
                         <h2 class="text-xl font-semibold text-slate-900 mb-4">15. Contact Information</h2>
                         <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 mb-6">
                             <p class="text-slate-700 font-semibold mb-2">Prex Markets</p>
-                            <p class="text-slate-600 mb-1">Email: <a href="mailto:legal@wusd.finance" class="text-prex-600 hover:underline">legal@wusd.finance</a></p>
-                            <p class="text-slate-600 mb-1">Website: <a href="https://www.wusd.finance" class="text-prex-600 hover:underline">www.wusd.finance</a></p>
-                            <p class="text-slate-600 mb-1">General inquiries: <a href="mailto:social@wusd.finance" class="text-prex-600 hover:underline">social@wusd.finance</a></p>
-                            <p class="text-slate-600">Support: <a href="mailto:support@prex.markets" class="text-prex-600 hover:underline">support@prex.markets</a></p>
+                            <p class="text-slate-600 mb-1">Email: <a href="mailto:legal@wusd.finance" class="text-blue-600 hover:underline">legal@wusd.finance</a></p>
+                            <p class="text-slate-600 mb-1">Website: <a href="https://www.wusd.finance" class="text-blue-600 hover:underline">www.wusd.finance</a></p>
+                            <p class="text-slate-600 mb-1">General inquiries: <a href="mailto:social@wusd.finance" class="text-blue-600 hover:underline">social@wusd.finance</a></p>
+                            <p class="text-slate-600">Support: <a href="mailto:support@prex.markets" class="text-blue-600 hover:underline">support@prex.markets</a></p>
                         </div>
 
-                        <div class="bg-prex-50 border border-prex-200 rounded-lg p-4">
-                            <p class="text-prex-800 font-semibold text-center">BY USING THE PLATFORM, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE.</p>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <p class="text-blue-800 font-semibold text-center">BY USING THE PLATFORM, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE.</p>
                         </div>
                     </div>
                 </Card>
