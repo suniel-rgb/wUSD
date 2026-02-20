@@ -41,7 +41,7 @@
 
                 <!-- CTAs -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://app.prex.markets" class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-medium transition-colors group">
+                    <a href="https://app.prex.markets" class="inline-flex items-center justify-center gap-2 bg-prex-600 hover:bg-prex-700 text-white px-6 py-3 rounded-xl font-medium transition-colors group">
                         Start Earning Now
                         <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />

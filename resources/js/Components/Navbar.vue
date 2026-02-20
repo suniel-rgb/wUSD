@@ -22,10 +22,10 @@
 
                 <!-- CTA Buttons -->
                 <div class="hidden md:flex items-center gap-3">
-                    <a href="https://app.prex.markets" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-medium transition-colors">
+                    <a href="https://app.prex.markets" class="bg-prex-600 hover:bg-prex-700 text-white px-5 py-2.5 rounded-lg font-medium transition-colors">
                         Log In
                     </a>
-                    <a href="https://app.prex.markets" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl text-sm font-medium transition-colors">
+                    <a href="https://app.prex.markets" class="bg-prex-600 hover:bg-prex-700 text-white px-5 py-2.5 rounded-xl text-sm font-medium transition-colors">
                         Start Earning
                     </a>
                 </div>
@@ -65,7 +65,7 @@
                         <a href="https://app.prex.markets" class="w-full py-3 text-center text-sm font-medium text-slate-600 border border-slate-200 rounded-xl hover:border-slate-300 transition-colors">
                             Log In
                         </a>
-                        <a href="https://app.prex.markets" class="w-full py-3 text-center text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors">
+                        <a href="https://app.prex.markets" class="w-full py-3 text-center text-sm font-medium text-white bg-prex-600 hover:bg-prex-700 rounded-xl transition-colors">
                             Start Earning
                         </a>
                     </div>

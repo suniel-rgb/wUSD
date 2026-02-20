@@ -33,13 +33,13 @@
                         <div :class="['flex flex-col sm:flex-row gap-4 justify-center lg:justify-start transition-all duration-1000 delay-200', mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8']">
                             <a
                                 href="https://app.prex.markets/signup"
-                                class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                                class="bg-prex-600 hover:bg-prex-700 text-white px-8 py-3.5 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                             >
                                 Create Account
                             </a>
                             <Link
                                 href="/how-it-works"
-                                class="border-2 border-slate-300 hover:border-blue-600 text-slate-700 hover:text-blue-600 px-8 py-3.5 rounded-xl font-semibold text-lg transition-all duration-300"
+                                class="border-2 border-slate-300 hover:border-prex-600 text-slate-700 hover:text-prex-600 px-8 py-3.5 rounded-xl font-semibold text-lg transition-all duration-300"
                             >
                                 Learn How wUSD Works
                             </Link>
