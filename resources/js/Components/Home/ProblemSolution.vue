@@ -24,20 +24,24 @@
                         </div>
                         <h3 class="text-lg font-semibold text-slate-600">Traditional Rewards</h3>
                     </div>
-                    <div class="space-y-4">
-                        <Card v-for="(problem, index) in problems" :key="index" class="border-red-100 bg-red-50/50">
-                            <div class="flex gap-4">
+                    <div class="space-y-3">
+                        <div
+                            v-for="(problem, index) in problems"
+                            :key="index"
+                            class="bg-white border border-red-100 bg-red-50/50 rounded-2xl p-4 shadow-sm"
+                        >
+                            <div class="flex gap-4 items-start">
                                 <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center flex-shrink-0">
                                     <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="problem.iconPath" />
                                     </svg>
                                 </div>
-                                <div>
-                                    <h4 class="text-slate-900 font-semibold mb-1">{{ problem.title }}</h4>
-                                    <p class="text-slate-600 text-sm">{{ problem.description }}</p>
+                                <div class="pt-0.5">
+                                    <h4 class="text-slate-900 font-semibold text-sm mb-0.5">{{ problem.title }}</h4>
+                                    <p class="text-slate-600 text-sm leading-relaxed">{{ problem.description }}</p>
                                 </div>
                             </div>
-                        </Card>
+                        </div>
                     </div>
                     <p class="text-slate-600 mt-6 text-center lg:text-left italic">
                         This creates extractive ecosystems where platforms win, and users churn.
@@ -55,20 +59,24 @@
                         <h3 class="text-lg font-semibold text-prex-600">wUSD flips the model</h3>
                     </div>
                     <p class="text-slate-600 mb-4">With wUSD:</p>
-                    <div class="space-y-4">
-                        <Card v-for="(solution, index) in solutions" :key="index" variant="glow">
-                            <div class="flex gap-4">
+                    <div class="space-y-3">
+                        <div
+                            v-for="(solution, index) in solutions"
+                            :key="index"
+                            class="bg-white border border-prex-100 bg-prex-50/30 rounded-2xl p-4 shadow-sm"
+                        >
+                            <div class="flex gap-4 items-start">
                                 <div class="w-10 h-10 rounded-lg bg-prex-100 flex items-center justify-center flex-shrink-0">
                                     <svg class="w-5 h-5 text-prex-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="solution.iconPath" />
                                     </svg>
                                 </div>
-                                <div>
-                                    <h4 class="text-slate-900 font-semibold mb-1">{{ solution.title }}</h4>
-                                    <p class="text-slate-600 text-sm">{{ solution.description }}</p>
+                                <div class="pt-0.5">
+                                    <h4 class="text-slate-900 font-semibold text-sm mb-0.5">{{ solution.title }}</h4>
+                                    <p class="text-slate-600 text-sm leading-relaxed">{{ solution.description }}</p>
                                 </div>
                             </div>
-                        </Card>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -97,7 +105,6 @@
 
 <script setup>
 import Badge from '@/Components/Badge.vue';
-import Card from '@/Components/Card.vue';
 
 const problems = [
     {
