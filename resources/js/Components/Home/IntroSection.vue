@@ -52,10 +52,10 @@
                 <div
                     v-for="(feature, index) in features"
                     :key="index"
-                    class="relative p-6 bg-slate-50/80 border border-slate-200 rounded-2xl text-left min-h-[80px]"
+                    class="flex items-center gap-3 p-4 bg-slate-50 border border-slate-200 rounded-xl text-left"
                 >
-                    <div class="absolute top-4 left-4 w-2 h-2 rounded-full bg-amber-400" />
-                    <span class="text-slate-700 pl-5 block">{{ feature }}</span>
+                    <div class="w-2 h-2 rounded-full bg-pusd-500 flex-shrink-0" />
+                    <span class="text-slate-700">{{ feature }}</span>
                 </div>
             </div>
 

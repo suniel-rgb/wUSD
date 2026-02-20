@@ -51,8 +51,7 @@
 
             <a
                 href="https://app.prex.markets"
-                class="inline-flex items-center gap-2 px-8 py-4 text-base font-medium text-white rounded-full transition-all duration-200 hover:scale-105"
-                style="background-color: #2563eb; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4)"
+                class="inline-flex items-center gap-2 px-8 py-4 text-base font-medium text-white bg-prex-600 hover:bg-prex-500 rounded-full transition-all duration-200 shadow-lg shadow-prex-600/25 hover:scale-105"
             >
                 Start Earning wUSD
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
