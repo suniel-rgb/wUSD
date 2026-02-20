@@ -22,7 +22,7 @@
 
                 <!-- CTA Buttons -->
                 <div class="hidden md:flex items-center gap-3">
-                    <a href="https://app.prex.markets" class="px-4 py-2 text-sm text-slate-600 hover:text-slate-900 transition-colors font-medium">
+                    <a href="https://app.prex.markets" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-medium transition-colors">
                         Log In
                     </a>
                     <a href="https://app.prex.markets" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl text-sm font-medium transition-colors">
